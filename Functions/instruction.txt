@@ -1,0 +1,8 @@
+General Function 
+  
+
+Arrow Function 
+Parameters
+return
+
+  

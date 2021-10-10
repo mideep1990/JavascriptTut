@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nice-select2.css">
+    <title>Arrays in Javascript</title>
+</head>
+<body>
+    <div class="wrap">
+    <h4>Arrays in Javascript | <i style="color:grey;font-size:11px;">Powered by CoderCrab</i></h4>
+    <div>
+        <div class="box">
+            <select id="seachable-select">
+              <option data-display="Select">Nothing</option>
+              <option value="1">Some option</option>
+              <option value="2">Another option</option>
+              <option value="3" disabled>A disabled option</option>
+              <option value="4">Potato</option>
+            </select>
+          </div>
+    </div>
+    <div>
+        <select id="sst" onclick="SomeFun($event)">
+            <option>test1</option>
+            <option>No Test</option>
+            <option>Some</option>
+            <option>Many</option>
+        </select>
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="nice-select2.js"></script>
+    <script>
+        function SomeFun()
+        {
+           alert("Cool"+$event.target.value);
+        }
+
+
+        document.addEventListener("DOMContentLoaded", function(e){
+     
+          // default
+          var els = document.querySelectorAll(".selectize");
+          els.forEach(function(select){
+            NiceSelect.bind(select);
+          });
+     
+          // seachable 
+          var options = {searchable: true};
+          NiceSelect.bind(document.getElementById("seachable-select"), options); 
+        });
+       </script>
+    </body>
+</html>

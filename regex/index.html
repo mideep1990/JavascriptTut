@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Regex Checker</title>
+</head>
+<body>
+    <div class="wrap">
+    <h4>Regular Expression Checker | <i style="color:grey;font-size:11px;">Powered by CoderCrab</i></h4>
+    <div data-regex class="regWrap">
+        <!--<.inputSpan data-textar placeholder="Enter Expression"></.inputSpan><br/>-->
+        <span data-textar placeholder="Enter Expression" contenteditable="true" class="inputSpan"></span><br/>
+        <span class="button_msg">
+            <span id="msg">Please Enter Some Regular Expression !!!</span>
+            <button id="checkButton">Check</button>
+            <span id="inputcheckBox"><input type="checkbox" id="defaulttext"/><label for="defaulttext">Default Text</label></span>
+        </span>
+    </div>
+    <div data-input contenteditable="true" class="resultDiv"> 
+    </div>
+    </div>
+</body>
+<script src="regex.js"></script>
+</html>

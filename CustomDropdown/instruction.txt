@@ -1,0 +1,32 @@
+Filter (filters and returns new Array)
+------------------------------
+
+let arrayTarget = 
+arrayLangs.filter((element) => {
+    return element.people > 20;
+});
+
+Foreach (iterates)
+------------------------------
+let arrayTarget = arrayLangs.forEach((element,index) => {
+   console.log(index,element.level)
+})
+
+Find (Finds first occurence data and return the object)
+------------------------------
+let arrayTarget = arrayLangs.find((element) => {
+    return element.level === 6;
+});
+
+Some
+------------------------------ 
+let arrayTarget = arrayLangs.some((element) => {
+    return element.level === 1;
+});
+
+map ()
+------------------------------
+let arrayTarget = arrayLangs.map((element) => {
+    console.log(element.level * 2)
+});
+

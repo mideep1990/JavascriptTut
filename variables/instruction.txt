@@ -1,0 +1,14 @@
+Var -------
+  Global Scope
+  Defined inside can be used any where as global
+  can be intitialized and can be altered
+
+Let--------(TDZ - Temporal Dead zone)
+  Block Scope
+  Defined inside can not use outside of scope
+  can be inialized and can be altered
+
+Const ------(TDZ - Temporal Dead zone)
+  Block Scope
+  Defined inside can not use outside of scope
+  should be initialized and can not be altered

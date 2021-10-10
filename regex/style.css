@@ -1,0 +1,65 @@
+body{
+    margin:0 auto;
+    width:100%;
+    background-color:rgb(241, 248, 255);
+    box-sizing: content-box;
+}
+.wrap{
+    width:90%;
+    margin:10px;
+    float:left;
+}
+.regWrap{
+    float:left;
+    width:70%;
+    background-color: white;
+    border-radius:12px;
+}
+.inputSpan{
+    float:left;
+    width:95%;
+    height:60px;
+    border:none;
+    padding:10px;
+    border-radius:12px;
+    outline: none;
+}
+.button_msg{
+    width:100%;
+    float:left;
+    background-color: rgb(175, 236, 247);
+}
+#msg{
+    float:left;
+    margin:10px 5px;
+    text-align: center;
+    justify-content: center;
+    font-size:13px;
+    font-weight: 600;
+}
+.button_msg button{
+    float:right;
+    background-color: rgb(23, 132, 146);
+    padding:5px;
+    font-size:14px;
+    border-radius:5px;
+    color:white;
+    margin:10px;
+    cursor: pointer;
+}
+.button_msg #inputcheckBox{
+ float:right;
+ margin:10px 3px;
+ font-size:12px;
+}
+.resultDiv{
+    font-size:13px;
+    float:left;
+    width:68.5%;
+    min-height:200px;
+    margin:10px 0px;
+    background-color: rgb(240, 223, 200);
+    border-radius: 0px 0px 10px 10px;
+    padding:10px;
+    outline: none;
+}
