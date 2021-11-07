@@ -1,0 +1,115 @@
+
+.wrap{
+    width:30%;
+    display:flex;
+    flex-direction: column;
+    height:100px;
+    margin:1rem;
+    padding:.5rem;
+    border:1px solid rgb(224, 224, 224);
+    background-color: rgb(233, 233, 233); 
+    box-shadow:1px 1px 3px  rgb(109, 108, 108);
+    border-radius:4px;
+}
+.toggleTop{
+    margin:.01rem;
+    height:20px;
+    display: flex;
+    flex-direction: column;
+    width:99%;
+    background-color: rgb(202, 202, 202);
+    border-radius:10px;
+}
+.readFlag{
+    background-color: royalblue;
+    box-shadow: 1px 1px 3px rgb(109, 108, 108);
+    padding:.2rem;
+    width:30%;
+    border-radius:10px;
+    height:100%;
+    /*Transition without animation prop*/
+    /*transition: transform 1s ease-in-out;*/
+}
+.paraG{
+    display: flex;
+    margin:.1rem;
+}
+.paraG p{
+    padding:0px;
+    margin:0px;
+    font-size:.7rem;
+    color:rgb(153, 153, 153)
+}
+.wrap:hover .paraG>p{
+    color:black
+}
+.wrap:hover .readFlag{
+    background-color: chartreuse;
+    /*transform without animation prop*/
+    /*transform:translateX(200%)*/
+    animation : reading 1s ease-in-out forwards infinite alternate;
+}
+@keyframes reading{
+    0%{
+        transform : translateX(0%)
+    }
+    100%{
+        transform : translateX(200%)
+    }
+}
+.wrap2{
+    margin:.5rem;
+    width:300px;
+    height:300px;
+    border:1px solid gray;
+    background-color: rgb(230, 230, 230);
+    border-radius:100%;
+}
+.cue{
+    width:20px;
+    height:20px;
+    border-radius:100%;
+    background-color: magenta;
+    box-shadow: 1px 1px 3px gray;
+    margin:2.6rem;
+    animation:random 1s ease-in-out infinite alternate;
+}
+.wrap2:hover .cue{
+    animation-play-state: paused;
+}
+@keyframes random{
+    0%{
+        transform:translate(0%,0%);
+    }
+    10%{
+        transform:translate(30%,30%);
+    }
+    20%{
+        transform:translate(170%,190%);
+    }
+    30%{
+        transform:translate(450%,10%);
+    }
+    40%{
+        transform:translate(0%,900%);
+    }
+    50%{
+        transform:translate(900%,330%);
+    }
+    60%{
+        transform:translate(100%,198%);
+    }
+    70%{
+        transform:translate(100%,60%);
+    }
+    80%{
+        transform:translate(700%,10%);
+    }
+    90%{
+        transform:translate(60%,50%);
+    }
+    100%{
+        transform:translate(1000%,1000%);
+    }
+    
+}

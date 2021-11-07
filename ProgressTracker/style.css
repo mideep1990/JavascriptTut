@@ -1,0 +1,48 @@
+.ProgressTrackerWrap{
+    width:100%;
+    border:1px solid red;
+    display: flex;
+    justify-content: center;
+}
+.progressTracker li {
+    list-style-type: none;
+    width: 25%;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    color: #7d7d7d;
+    font-family: Roboto;
+}
+.progressTracker li::before {
+    width: 1em;
+    height: 1em;
+    content: "";
+    line-height: 30px;
+    border: .1em solid #7d7d7d;
+    display: block;
+    margin: .76em auto .6em auto;
+    border-radius: 50%;
+    background-color: white;
+}
+.progressTracker li::after {
+    width: 100%;
+    height: 2px;
+    content: 'trst';
+    position: absolute;
+    background: #AAAAAA;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+.progressTracker li:first-child::after {
+    content: none;
+}
+.progressTracker li.active::before {
+    color: green;
+    background-color: red;
+    border-color:red;
+}
+.progressTracker li.active + li::after {
+    background-color: #55b776;
+}

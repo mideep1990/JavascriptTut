@@ -1,0 +1,175 @@
+1 - Filter (filters and returns new Array)
+------------------------------
+
+let arrayTarget = 
+arrayLangs.filter((element) => {
+    return element.people > 20;
+});
+Example : 
+const __arrayV = [12,67,8,90,6,45,1] 
+let newArray = __arrayV.filter(ele => ele%2 == 0)
+console.log("filtered new Array : ",newArray)
+
+let newLang = arrayLangs.filter(ele => {
+    return ele.people > 35;
+})
+console.log("filtered new Array Lang : ",newLang)
+
+2 - Foreach (iterates)
+------------------------------
+let arrayTarget = arrayLangs.forEach((element,index) => {
+   console.log(index,element.level)
+})
+
+Example:
+arrayLangs.forEach((ele,index) => {
+    console.log(index+" - "+ele.people);
+})
+
+const arr = [12,34,2,67,89,9]
+arr.forEach((ele,i) => {
+    console.log(i+" == "+ele)
+})
+
+3 - Find (Finds first occurence data and return the object)
+------------------------------
+let arrayTarget = arrayLangs.find((element) => {
+    return element.level === 6;
+});
+
+Example : 
+let newV = arrayLangs.find(ele => {
+    return ele.level > 7
+})
+console.log("New V",newV)
+
+const arr = [2,56,89,90,23,4]
+let newV1 = arr.find(ele => {
+    return ele > 50;
+})
+console.log(newV1)
+
+4 - Some ( Atleast one element in the array satisfies the rule,Then returns true)
+------------------------------ 
+let arrayTarget = arrayLangs.some((element) => {
+    return element.level === 1;
+});
+
+Example : 
+const arr = [12,45,78,89,92]
+let isDivisibleby11 = arr.some(ele => {
+    return ele%11 == 0
+})
+console.log(isDivisibleby11)
+
+let moreThan70 = arrayLangs.some(ele => {
+    return ele.people > 90
+})
+
+console.log("--> ",moreThan70)
+
+5 - Every ( All elements in the array satisfies the rule,Then returns true)
+------------------------------ 
+let arrayTarget = arrayLangs.every((element) => {
+    return element.level === 1;
+});
+
+Example : 
+const arr = [12,78,88,84,12,90]
+let isdisvisibleby2 = arr.every(ele => {
+    return ele%2 == 0
+})
+console.log(isdisvisibleby2);
+
+let ismorethan10 = arrayLangs.every(ele => {
+    return ele.people > 9
+})
+console.log(ismorethan10)
+
+6 - Map (creates a new array populated with the results of calling a provided function) 
+------------------------------
+let arrayTarget = arrayLangs.map((element) => {
+    console.log(element.level * 2)
+});
+Example : 
+let newArr = arrayLangs.map(ele => {
+    return ele.people = ele.people*2;
+})
+
+console.log("Old Arr - ",arrayLangs)
+console.log("New Arr - ",newArr)
+7 - Reduce (Uses a callback function to calculate single value out of an Array)
+------------------------------
+let net = arrayLangs.reduce((net,element) => {
+    return net + element
+});
+
+Example : 
+const arr = [12,78,96,54,23]
+
+let v = arr.reduce((sum,ele)=>{
+   return sum+ele
+})
+
+console.log(v);
+
+let v1 = arrayLangs.map(ele => ele.people).reduce((sum,ele) => {
+    return sum+ele
+})
+console.log(v1)
+
+8 - slice (Copies array to a new array with some of mentioned elements)
+-----------------------------
+let net = arrayLangs.slice(1,3);
+Example : 
+let arrayLangs1 = arrayLangs.slice(0,3)
+console.log("Old = ",arrayLangs)
+console.log("New = ",arrayLangs1)
+
+9 - splice (remove and add elements to an existing array)
+-----------------------------
+let net = arrayLangs.splice(1,1);
+
+Example : 
+arrayLangs.splice(3,2)
+arrayLangs.splice(3,0,{lang:"JavaNew",people:40,level:7},{lang:"JavaNew11",people:40,level:7})
+console.log(arrayLangs)
+
+
+10 - push (Add item to end of an array)
+-----------------------------
+let new = array1.push("something")
+Example : 
+arrayLangs.push({lang:"JavaNew",people:40,level:7})
+console.log(arrayLangs);
+
+11 - pop (Remove item to end of an array)
+-----------------------------
+let new = array1.pop("something")
+
+12 - unshift (Add item to start of an array)
+-----------------------------
+let new = array1.unshift("something")
+
+
+13 - shift (Remove item to end of an array)
+-----------------------------
+let new = array1.shift("something")
+
+arrayLangs.shift()
+console.log(arrayLangs);
+
+14 - includes (check if element is present)
+------------------------------
+let present = array1.includes("someitem")
+let arr = [12,45,78,90]
+console.log(arr.includes(78))
+
+15 - split (split a string to array with a delimeter like , or $ etc)
+------------------------------
+let present = array1.aplit("some item,some more,again some more")
+
+let sm = "Deepankar,Mishra,SomeMore,Else"
+console.log(sm.split(','))
+
+
